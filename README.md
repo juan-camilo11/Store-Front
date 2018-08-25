@@ -14,7 +14,7 @@ How does it work:
 
 When executing the bamazonCustomer script, the user is prompted to "browse wares" or "exit". The user can navigate the option using the up and down arrow keys, and hit enter to make their selection. If "browse wares" is selected, a list populates in CLI displaying all items avaliable for purchase. The user is then prompted to input the ID of the item they wish to purchase and the quantity of the item they wish to purchase. The user is then notified if their transaction was successful or not based on their inputs. After the transaction is completed, the user is taken back to the "main menu" where they can select from "browse wares" or "exit". If the user choses to exit the application is closed. See GIF below!
 
-![Alt Text](..\bamazonCustomerGIF.gif)
+![](bamazonCustomerGIF.gif)
 
 When executing the bamazonManager script, the user is prompted to either "display stock", "display low inventory stock", "add a new product", "re-stock", or "exit". As in the bamazon customer script, the user can use the upa dn down arrow keys to navigate through the options that are presented. See below for a description for each:
 
@@ -30,4 +30,4 @@ exit: closes the application.
 
 See GIF below:
 
-![Alt Text](..\bamazonManagerGIF.gif)
+![](bamazonManagerGIF.gif)
