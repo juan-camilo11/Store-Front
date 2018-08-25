@@ -29,7 +29,8 @@ const displayLowInventory = () => {
   connection.query(queryString, (err, resp) => {
     if (err) throw err;
     // console.log(resp);
-    if (!resp) {
+    if (resp != []) {
+      // console.log("We in this B");
       resp.map(x => {
         console.log("Displaying low-stock inventory");
         console.log(
