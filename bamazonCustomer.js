@@ -30,7 +30,7 @@ const checkStock = (argId, argQuantity) => {
         // console.log(x.item_id);
         // console.log(x.stock_quantity);
         // console.log(typeof x.stock_quantity);
-        if (parseInt(x.stock_quantity) >= parseInt(argQuantity)) {
+        if ((parseInt(x.stock_quantity) >= parseInt(argQuantity)) && parseInt(x.stock_quantity) != 0) {
           console.log("transation can be achieved");
           completeTransaction(argId, argQuantity, x.stock_quantity);
         } else {
@@ -105,7 +105,7 @@ const runDaTing = () => {
             if (!parseInt(ans.itemID)) {
               console.log("the input you entered is not valid");
               runDaTing();
-            } else if (!parseInt(ans.quantity)) {
+            } else if (!parseInt(ans.quantity) || parseInt(ans.quantity) < 0) {
               console.log("the input you entered is not valid");
               runDaTing();
             } else {

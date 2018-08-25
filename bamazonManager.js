@@ -164,10 +164,10 @@ const runIt = () => {
                 }
               ])
               .then(ans => {
-                if (!parseFloat(ans.price)) {
+                if (!parseFloat(ans.price) || parseFloat(ans.price) < 0) {
                   console.log("The price value you entered is invalid");
                   runIt();
-                } else if (!parseInt(ans.stock)) {
+                } else if (!parseInt(ans.stock) || parseInt(ans.stock) < 0) {
                   console.log("The stock value you entered is invalid");
                   runIt();
                 } else {
